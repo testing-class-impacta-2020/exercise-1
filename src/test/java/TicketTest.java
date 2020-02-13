@@ -29,7 +29,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -52,7 +52,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -75,7 +75,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -98,7 +98,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -118,7 +118,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -141,7 +141,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -164,7 +164,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, MoneyType.REAIS, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -181,7 +181,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (0, null, 0, null);
+        actual = ticketController.buyTicket (0, null, 0, null, null);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -204,7 +204,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, null);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, null, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -227,7 +227,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket (uniqueCode, user, balance, null);
+        actual = ticketController.buyTicket (uniqueCode, user, balance, null, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -250,7 +250,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, null);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, null, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual);
@@ -273,7 +273,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual.getTicket().getUniqueCode());
@@ -296,7 +296,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual.getTicket().getMoneyType());
@@ -319,7 +319,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual.getTicket().getPrice(), 0);
@@ -342,7 +342,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual.getTicket().getTitle());
@@ -365,7 +365,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual.getTicket().getDescription());
@@ -388,7 +388,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertEquals(expect,actual.getTicket().getLocation());
@@ -410,7 +410,7 @@ public class TicketTest {
         MyTicket actual;
 
         //act
-        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR);
+        actual = ticketController.buyTicket(uniqueCode, user, balance, MoneyType.DOLAR, Constants.tickets);
 
         //assert
         Assert.assertNotEquals(null,actual.getUser());
@@ -510,6 +510,29 @@ public class TicketTest {
 
         //assert
         Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void testTickeListTicketNull(){
+        //arrange
+        Constants.tickets = null;
+        TicketController ticketController = new TicketController();
+        User user = new User();
+
+        user.setName("Matheus Catossi");
+        user.setDocument("123123");
+
+        int uniqueCode = 1;
+        double balance = 50;
+
+        MyTicket expect = null;
+        MyTicket actual;
+
+        //act
+        actual = ticketController.buyTicket (uniqueCode, user, balance, null, Constants.tickets);
+
+        //assert
+        Assert.assertEquals(null,actual);
     }
 
 

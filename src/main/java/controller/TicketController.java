@@ -5,13 +5,15 @@ import model.MyTicket;
 import model.Ticket;
 import model.User;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 public class TicketController {
-    public MyTicket buyTicket(int uniqueCode, User user, double balance, MoneyType moneyType) {
+    public MyTicket buyTicket(int uniqueCode, User user, double balance, MoneyType moneyType, ArrayList<Ticket> ticketList) {
         MyTicket myTicket = new MyTicket();
         Ticket ticket = new Ticket();
-        ArrayList<Ticket> listTickets = ticket.getTickets();
+        ArrayList<Ticket> listTickets = ticketList;
 
         if (user == null) {
             System.out.println("User is null.");
@@ -59,12 +61,11 @@ public class TicketController {
             }
         }
 
-        if(ticket.getMoneyType() == null) {
-            System.out.println("MoneyType is null");
-            return null;
-        }
+
 
         if (contains == true) {
+
+
             if (ticket.getPrice() >= 0 && balance == ticket.getPrice()) {
                 if (moneyType.equals(ticket.getMoneyType())) {
                     myTicket.setTicket(ticket);

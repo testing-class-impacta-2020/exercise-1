@@ -75,8 +75,4 @@ public class Ticket {
     public void setUniqueCode(int uniqueCode) {
         this.uniqueCode = uniqueCode;
     }
-
-    public ArrayList<Ticket> getTickets() {
-        return Constants.tickets;
-    }
 }
