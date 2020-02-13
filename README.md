@@ -4,7 +4,7 @@ Para realizar o exercício foi gerado um projeto com uma estrutura de compra de 
 
 Na imagem abaixo a porcentagem de cobertura de testes da aplicação.
 
-![Coverage](/images/coverage.png?raw=true "Coverage")
+![Coverage](/images/coverage-image.png?raw=true "Coverage")
 
 Abaixo está a quantidade de testes executados para cobrir a aplicação
 
